@@ -1,0 +1,30 @@
+{
+  "name": "atlas-culture-graph",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ATLAS — онлайн-галерея трёх музеев на GraphQL Federation",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "ingest": "node --disable-warning=ExperimentalWarning ingest/run.js",
+    "smoke": "node --disable-warning=ExperimentalWarning scripts/smoke.js",
+    "client": "vite --config client/vite.config.js"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^2.11.2",
+    "@apollo/server": "^4.12.2",
+    "@apollo/subgraph": "^2.11.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "graphql": "^16.11.0",
+    "graphql-tag": "^2.12.6",
+    "graphql-ws": "^6.0.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.0",
+    "vite": "^7.2.2"
+  }
+}
